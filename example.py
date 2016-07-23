@@ -75,7 +75,7 @@ numbertoteam = {  # At least I'm pretty sure that's it. I could be wrong and the
     2: 'Valor',
     3: 'Instinct',
 }
-origin_lat, origin_lon = None, None
+origin_lat, origin_lon = 42.3732099, -71.1539969
 is_ampm_clock = False
 
 # stuff for in-background search thread
