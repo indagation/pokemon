@@ -1,2 +1,2 @@
 web: gunicorn -b 0.0.0.0:$PORT example:app --log-file -
-init: python example.py -P $PORT
+worker: python example.py -P $PORT
