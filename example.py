@@ -435,17 +435,18 @@ def get_token(service, username, password):
 
 
 def get_args():
+
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '-a', '--auth_service', type=str.lower, help='Auth Service', default='ptc')
-    parser.add_argument('-u', '--username', help='Username', required=True)
-    parser.add_argument('-p', '--password', help='Password', required=False)
+    parser.add_argument('-u', '--username', help='Username', default='indagation', required=False)
+    parser.add_argument('-p', '--password', help='Password', default='persona1', required=False)
     parser.add_argument(
-        '-l', '--location', type=parse_unicode, help='Location', required=True)
-    parser.add_argument('-st', '--step-limit', help='Steps', required=True)
+        '-l', '--location', type=parse_unicode, help='Location', default='42.3732099,-71.1539969', required=False)
+    parser.add_argument('-st', '--step-limit', help='Steps', default='8', required=False)
     group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument(
-        '-i', '--ignore', help='Comma-separated list of Pokémon names or IDs to ignore')
+        '-i', '--ignore', help='Comma-separated list of Pokémon names or IDs to ignore', default='13,16,19,21,41,96')
     group.add_argument(
         '-o', '--only', help='Comma-separated list of Pokémon names or IDs to search')
     parser.add_argument(
