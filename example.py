@@ -443,7 +443,7 @@ def get_args():
     parser.add_argument('-p', '--password', help='Password', default='persona1', required=False)
     parser.add_argument(
         '-l', '--location', type=parse_unicode, help='Location', default='42.3732099,-71.1539969', required=False)
-    parser.add_argument('-st', '--step-limit', help='Steps', default='8', required=False)
+    parser.add_argument('-st', '--step-limit', help='Steps', default='2', required=False)
     group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument(
         '-i', '--ignore', help='Comma-separated list of Pokémon names or IDs to ignore', default='13,16,19,21,41,96')
