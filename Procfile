@@ -1,1 +1,1 @@
-web: gunicorn example.py --log-file -
+web: gunicorn example:app --log-file -
