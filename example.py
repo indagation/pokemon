@@ -499,7 +499,7 @@ def get_args():
     	action='store_true',
     	default=False)
     parser.add_argument(
-        '-d', '--debug', help='Debug Mode', action='store_true')
+        '-d', '--debug', help='Debug Mode', action='store_true', default=True)
     parser.set_defaults(DEBUG=True)
     return parser.parse_args()
 
